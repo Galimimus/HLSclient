@@ -29,6 +29,7 @@ public class HelloApplication extends Application {
         stage.show();
         Gson g = new Gson();
 
+
         Server settings_server = g.fromJson(readFromResourceStream(Paths.get("settings_connection.json")), Server.class);
 
         try {
